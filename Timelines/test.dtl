@@ -1,0 +1,25 @@
+Test
+player: what
+join test_char (Neutral) 1 [animation="Slide In Left"]
+test_char: whats up bub
+player: who the freak are you
+test_char (Angry): erm... im the test guy????
+test_char: im a bit of a big deal???????????
+- never heard of you
+	player: nope cant say i have
+	test_char: what the flip bub
+- ohhhh you!!!!!
+	player: ohhhh i know you!!!!!
+	test_char (Shock): you do???????
+	test_char (Neutral): thats epiec
+- holy shit jay from powerline
+	player: holy shit jay from powerline
+	test_char: wha--
+	update test_char (Shock) 1 [ move_time="0.1"]
+	join jay 3 [animation="Slide In Right"]
+	test_char (Shock): holy shit
+	jay: whats up guys its me jay from powerline
+if {CharStatus.dropout} == false:
+	jay: also andy edge is dead
+	test_char (Shock): oh no
+	player: he edged a little too hard
